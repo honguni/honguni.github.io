@@ -11,7 +11,7 @@ __볼드체__
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
-'''
+```
 $ git clone ''
 $ git remote -v
-'''
+```
