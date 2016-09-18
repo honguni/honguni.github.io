@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Rookie in NHN D&T
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+서울특별시 서초구 서초대로 398 플래티넘타워 501호 NHN D&T
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[honguni@nhnent.com](mailto:honguni@nhnent.com)
