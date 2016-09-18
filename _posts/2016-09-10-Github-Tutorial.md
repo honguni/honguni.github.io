@@ -190,5 +190,5 @@ $ git merge origin/master
 
 $ git pull origin master
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
 
+![_config.yml]({{ site.baseurl }}/images/config.png)
