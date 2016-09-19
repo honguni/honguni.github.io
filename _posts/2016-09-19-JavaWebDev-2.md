@@ -9,7 +9,7 @@ title: JavaWebDev - HTTP Protocol
 
   - Charles, Fiddler, WireShark 등
 
-#### [HTTP 응답 상태코드](https://ko.wikipedia.org/wiki/HTTP_%EC%83%81%ED%83%9C_%EC%BD%94%EB%93%9C){target="_blank"}
+#### [HTTP 응답 상태코드](https://ko.wikipedia.org/wiki/HTTP_%EC%83%81%ED%83%9C_%EC%BD%94%EB%93%9C){:target="_blank"}
 
 - 400 : 잘못된 요청
 
