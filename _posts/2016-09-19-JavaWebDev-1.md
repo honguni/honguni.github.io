@@ -24,4 +24,12 @@ title: JavaWebDev - Web Application?
   - 분리된 작업은 스레드에 정의하여 병행 처리
   - 복잡한 프로그래밍
 
+  #### *클라이언트·서버 아키텍처 진화*
+  - 비즈니스 로직을 전문으로하는 애플리케이션 서버
+  - 클라이언트는 실행 결과 출력만 담당(씬 클라이언트)
+  - 애플리케이션 서버에서 DBMS 접근
+
+  #### *웹 기술 적용*
+  ![WebApp](https://github.com/honguni/honguni.github.io/blob/master/images/2015-09-19-1.JPG)
+
 ---
