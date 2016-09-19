@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web Application?
+title: JavaWebDev - Web Application?
 ---
 
 ### 데스크탑 어플리케이션
