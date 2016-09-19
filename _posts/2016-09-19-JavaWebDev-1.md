@@ -30,6 +30,6 @@ title: JavaWebDev - Web Application?
   - 애플리케이션 서버에서 DBMS 접근
 
   #### *웹 기술 적용*
-  ![WebApp](https://github.com/honguni/honguni.github.io/blob/master/images/2015-09-19-1.JPG)
-
+  ![WebApp]({{ site.baseurl }}/images/2015-09-19-1.JPG)
+  
 ---
