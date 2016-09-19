@@ -38,4 +38,8 @@ title: JavaWebDev - Web Application?
   #### *웹 기술 적용*
   ![WebApp]({{ site.baseurl }}/images/2015-09-19-1.JPG)
   
+  - 애플리케이션 배포 불필요
+
+  - 서버쪽에서 UI 생성
+
 ---
