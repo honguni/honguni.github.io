@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaWebDev - Web Application?
+title: JavaWebDev - HTTP Protocol
 ---
 
 ### 데스크탑 어플리케이션
