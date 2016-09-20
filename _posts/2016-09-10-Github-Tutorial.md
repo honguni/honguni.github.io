@@ -54,3 +54,40 @@ title: Git 시작하기
   $ git checkout [NAME]		//[NAME]브랜치로 작업공간 이동
   $ git merge [NAME]		//현재 브랜치와 [NAME]브랜치 병합
   ```
+
+### 원격저장소
+
+**로컬저장소와 원격저장소 간의 연결**
+
+```
+$ git remote add [저장소별칭] [원격저장소URL]
+$ git remote -v						//연결확인
+```
+
+**로컬 작업내역을 원격저장소에 올리기**
+
+```
+$ git push origin --all
+```
+
+**PULL과 FETCH**
+
+  - pull 명령은 원격 저장소의 정보를 가져오면서 자동으로 병합 수행! (변경사항을 세세하게 파악하기 어렵다.)
+
+  - fetch를 이용해서 원격 저장소의 커밋을 가져오고, 확인 후 수동으로 병합하는 것을 추천
+
+(1) FETCH
+
+```
+$ git fetch
+
+$ git status
+
+$ git merge origin/master
+```
+
+(2) PULL
+
+```
+$ git pull origin master
+```
