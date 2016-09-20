@@ -17,7 +17,7 @@ title: Git 시작하기
   $ git config --list
   ```
 
-**git repository를 만드는 방법에는 두 가지가 있다.**
+**git 저장소 만들기**
 
 (1) init
 
@@ -34,4 +34,22 @@ title: Git 시작하기
   $ git clone [RepositoryURL]
   ```
 
-    *fatal에러 발생 시* - git 은 https 로 연결시 내부적으로 curl 의 라이브러리인 libcurl 을 사용하여 연결하는데 사용하는 동적 라이브러리가 https 를 지원하지 않는 버전이라 발생한다. C:\Windows\SysWOW64\libcurl.dll을 %Git_HOME%\bin\libcurl.dll 으로 덮어쓴다.
+    *fatal에러 발생 시*  - git 은 https 로 연결시 내부적으로 curl 의 라이브러리인 libcurl 을 사용하여 연결하는데 사용하는 동적 라이브러리가 https 를 지원하지 않는 버전이라 발생한다. C:\Windows\SysWOW64\libcurl.dll을 %Git_HOME%\bin\libcurl.dll 으로 덮어쓴다.
+
+**저장소 생성 및 관리 기본 사이클**
+
+파일작업 -> 상태확인 -> 기록추적 -> 커밋(커밋메시지작성)
+
+  ```
+  $ git status
+  $ git add [FILE]
+  $ git commit
+  ```
+
+**브랜치와 체크아웃**
+
+  ```
+  $ git branch			//현재 브랜치 확인
+  $ git branch [NAME]		//[NAME]이름의 브랜치 생성
+  $ git checkout [NAME]		//[NAME]브랜치로 작업공간 이동
+  ```
