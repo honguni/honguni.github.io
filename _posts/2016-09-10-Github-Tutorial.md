@@ -3,15 +3,15 @@ layout: post
 title: Git 시작하기
 ---
 
-### 분산 버전 관리 시스템(DVCS)
+### 분산 버전 관리 시스템 (DVCS)
 
-**볼드체**
+- 클라이언트가 서버의 저장소를 전부 복제
 
-__볼드체__
+- 서버에 문제가 생기더라도 복제물로 작업 진행 가능
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+  #### 사용자 정보 설정
 
-```
-$ git clone ''
-$ git remote -v
-```
+  ```
+  $ git config --global user.name "NAME"
+  $ git config --global user.email EMAIL@example.com
+  ```
