@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaWebDev - HTTP Protocol
+title: JavaWebDev - HTTP
 ---
 
   웹 브라우저와 웹 서버 사이에 데이터를 주고 받는 규칙을 정의한 것이다.
