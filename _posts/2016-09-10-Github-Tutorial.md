@@ -52,4 +52,5 @@ title: Git 시작하기
   $ git branch			//현재 브랜치 확인
   $ git branch [NAME]		//[NAME]이름의 브랜치 생성
   $ git checkout [NAME]		//[NAME]브랜치로 작업공간 이동
+  $ git merge [NAME]		//현재 브랜치와 [NAME]브랜치 병합
   ```
