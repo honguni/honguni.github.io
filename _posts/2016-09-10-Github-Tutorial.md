@@ -26,3 +26,14 @@ title: Git 시작하기
   ```
   $ git init
   ```
+
+(2) clone
+
+  - 다른 저장소를 복제
+  ```
+  $ git clone [RepositoryURL]
+  ```
+
+  *fatal에러 발생 시*
+
+  - git 은 https 로 연결시 내부적으로 curl 의 라이브러리인 libcurl 을 사용하여 연결하는데 사용하는 동적 라이브러리가 https 를 지원하지 않는 버전이라 발생한다. C:\Windows\SysWOW64\libcurl.dll을 %Git_HOME%\bin\libcurl.dll 으로 덮어쓴다.
