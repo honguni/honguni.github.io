@@ -26,11 +26,14 @@ title: JavaWebDev - HTTP
 - 대용량 데이터 전송 불가
 
 GET 요청이 발생하는 경우
-1. 주소창에 URL 입력
-2. 링크를 클릭
-3. 입력폼의 method속성을 GET으로 지정
 
-  **POST 요청** - HTTP 메시지 본문에 데이터 포함
+  1. 주소창에 URL 입력
+
+  2. 링크를 클릭
+
+  3. 입력폼의 method속성을 GET으로 지정
+
+**POST 요청** - HTTP 메시지 본문에 데이터 포함
 
 #### 파일 업로드 시 Content-Type 헤더
 
