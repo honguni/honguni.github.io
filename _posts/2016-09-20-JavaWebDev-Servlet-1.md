@@ -79,7 +79,6 @@ public class HelloWorld implements Servlet {
   <url-pattern>/Hello</url-pattern>
 </servlet-mapping>
 ```
-
 2. 서블릿 클래스에 애노테이션 @WebServlet("/~~~") 추가
 
   - @WebServlet(urlPatterns={"/hello", "/hello.do", "/hello.action"} -> 여러 개의 URL 설정 가능
