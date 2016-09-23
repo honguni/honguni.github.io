@@ -56,9 +56,7 @@ public class HelloWorld implements Servlet {
 
 - service() : 클라이언트가 요청할 때 마다 호출되는 메서드
 
-- destroy() : 서블릿 컨테이너가 종료되거나 웹 애플리케이션이 멈출 때, 또는 해당 서블릿을 비활성화 
-
-시킬 때 호출되는 메서드
+- destroy() : 서블릿 컨테이너가 종료되거나 웹 애플리케이션이 멈출 때, 또는 해당 서블릿을 비활성화 시킬 때 호출되는 메서드
 
 - getServletConfig() : 서블릿 설정 정보를 다루는 ServletConfig 객체 반환
 
@@ -112,9 +110,7 @@ public class HelloWorld implements Servlet {
 
 ### GenericServlet
 
-  - 서블릿 클래스가 필요로 하는 init(), destroy(), getServletConfig(), getServletInfo()를 미리 구현
-
-하여 상속
+  - 서블릿 클래스가 필요로 하는 init(), destroy(), getServletConfig(), getServletInfo()를 미리 구현하여 상속
 
   - service() 메서드만 구현하면 된다.
 
