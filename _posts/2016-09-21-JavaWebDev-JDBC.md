@@ -1,5 +1,5 @@
 ---
-laydout: post
+layout: post
 title: JavaWebDev - JDBC
 ---
 
