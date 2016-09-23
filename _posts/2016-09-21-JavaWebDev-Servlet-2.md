@@ -32,7 +32,7 @@ public class MemberAddServlet extends HttpServlet {
 			throws ServletException, IOException {
 		
 		request.setCharacterEncoding("UTF-8");	
-		//getParameter() 메서드는 기본적으로 매개변수의 ㄱ밧이 ISO-8859-1로 인코딩 되었다고 가정하기 때문에 UTF-8 세팅
+		//getParameter() 메서드는 기본적으로 매개변수의 값이 ISO-8859-1로 인코딩 되었다고 가정하기 때문에 UTF-8 세팅
 		
 		Connection conn = null;
 		PreparedStatement stmt = null;
