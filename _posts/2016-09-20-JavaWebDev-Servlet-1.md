@@ -3,19 +3,13 @@ layout: post
 title: JavaWebDev - Servlet - 1
 ---
 
-[CGI](https://ko.wikipedia.org/wiki/%EA%B3%B5%EC%9A%A9_%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9B%A8%EC%9D
-
-%B4_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4){:target="_blank"} - 웹서버와 애플리케이션 사이의 
+[CGI](https://ko.wikipedia.org/wiki/%EA%B3%B5%EC%9A%A9_%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9B%A8%EC%9D%B4_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4){:target="_blank"} - 웹서버와 애플리케이션 사이의 
 
 데이터를 주고받는 규칙
 
-[서블릿](https://ko.wikipedia.org/wiki/%EC%9E%90%EB%B0%94_%EC%84%9C%EB%B8%94%EB%A6%BF)
+[서블릿](https://ko.wikipedia.org/wiki/%EC%9E%90%EB%B0%94_%EC%84%9C%EB%B8%94%EB%A6%BF){:target="_blank"} - 자바로 만든 CGI 프로그램
 
-{:target="_blank"} - 자바로 만든 CGI 프로그램
-
-[WAS](https://ko.wikipedia.org/wiki/%EC%9B%B9_%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC
-
-%85%98_%EC%84%9C%EB%B2%84){:target="_blank"} - 웹 기술을 기반으로 클라이언트·서버 시스템 구조에서 
+[WAS](https://ko.wikipedia.org/wiki/%EC%9B%B9_%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98_%EC%84%9C%EB%B2%84){:target="_blank"} - 웹 기술을 기반으로 클라이언트·서버 시스템 구조에서 
 
 서버 쪽 애플리케이션의 생성과 실행, 소멸을 관리
 
@@ -94,9 +88,7 @@ public class HelloWorld implements Servlet {
 
   - @WebServlet(urlPatterns={"/hello", "/hello.do", "/hello.action"} -> 여러 개의 URL 설정 가능
 
-  *애노테이션으로 서블릿 배치 정보 등록이 편하지만 배치 정보 탐색 시 모든 클래스를 검색하게 되어 느
-
-려질 수 있는 단점 존재*
+  *애노테이션으로 서블릿 배치 정보 등록이 편하지만 배치 정보 탐색 시 모든 클래스를 검색하게 되어 느려질 수 있는 단점 존재*
 
 ---
 
