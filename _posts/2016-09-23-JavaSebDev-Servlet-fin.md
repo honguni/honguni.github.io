@@ -1,5 +1,5 @@
 ---
-location: post
+layout: post
 title: JavaWebDev - Servlet - Refresh, Redirect
 ---
 
@@ -35,8 +35,6 @@ title: JavaWebDev - Servlet - Refresh, Redirect
 
   - HTTP Response헤더에 sendRedirect()에 입력된 url 매개변수 값을 가진 Location 속성 추가.
 
-  - 리다이렉트 후 통신 HTTP 응답상태코드는 302(요청한 자원이 다른 URL로 이동되어 Location헤더에 있
-
-는 주소로 다시 요청)
+  - 리다이렉트 후 통신 HTTP 응답상태코드는 302(요청한 자원이 다른 URL로 이동되어 Location헤더에 있는 주소로 다시 요청)
 
 ---
