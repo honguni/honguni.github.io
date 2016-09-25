@@ -10,7 +10,7 @@ title: JavaWebDev - Servlet - Context Init
   - 보통 데이터베이스 연결 정보와 같은 정적인 데이터를 서블릿에 전달할 때 사용
 
   - DD파일(web.xml)에 서블릿 배치 정보 작성
-  ```xml
+  ```html
   <context-param>
     <param-name>driver</param-name>
     <param-value>org.mariadb.jdbc.Driver</param-value>
