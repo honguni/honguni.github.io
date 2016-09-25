@@ -65,7 +65,8 @@ title: JavaWebDev - Servlet - ContextInit
   - 모든 서블릿이 사용 가능
 
   - DD파일 (web.xml)
-  ```xml
+
+```xml
   <context-param>
 	<param-name>driver</param-name>
 	<param-value>org.mariadb.jdbc.Driver</param-value>
@@ -87,10 +88,10 @@ title: JavaWebDev - Servlet - ContextInit
 	<servlet-name>MemberListServlet</servlet-name>
 	<servlet-class>spms.servlets.MemberListServlet</servlet-class>
   </servlet>
-  ```
+```
 
   - 서블릿
-  ```java
+```java
   //1. 사용할 JDBC 드라이버를 등록하라.
   ServletContext ctx = this.getServletContext();
   Class.forName(ctx.getInitParameter("driver"));
@@ -100,6 +101,6 @@ title: JavaWebDev - Servlet - ContextInit
 		ctx.getInitParameter("url"),
 		ctx.getInitParameter("username"),
 		ctx.getInitParameter("password"));
-  ```
+```
 
 ---
