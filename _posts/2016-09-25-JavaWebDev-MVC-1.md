@@ -16,27 +16,25 @@ title: JavaWebDev - MVC - JSP
 ### JSP
 
   **지시자** - <%@ ~~ %>
-
-    - page 지시자
-
-      - JSP 페이지와 관련된 속성 정의
-      ```jsp
+  
+  - page 지시자
+  
+  - JSP 페이지와 관련된 속성 정의
+  ```jsp
       <%@page
             language="java"
             contentType="text/html; charset=UTF-8"
             pageEncoding="UTF-8"%>
-      ```
+  ```
 
+  
   **스크립틀릿** - <% ~~ %> 사이의 코드
-
-    - 자바코드로 그대로 복사
+  - 자바코드로 그대로 복사
 
   **선언부** - <%! ~~ %>
-
-    - 클래스 선언부로 그대로 복사  
+  - 클래스 선언부로 그대로 복사  
 
   **표현식** - <%= ~~ %>
-
-    - value 속성의 값
+  - value 속성의 값
     
 ---
