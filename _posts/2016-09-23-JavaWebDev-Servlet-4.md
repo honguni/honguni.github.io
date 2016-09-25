@@ -102,5 +102,4 @@ title: JavaWebDev - Servlet - ContextInit
 		ctx.getInitParameter("username"),
 		ctx.getInitParameter("password"));
 ```
-
 ---
