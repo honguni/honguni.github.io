@@ -11,7 +11,7 @@ title: JavaWebDev - Servlet - ContextInit
   
   - DD파일(web.xml)에 서블릿 배치 정보 작성
   
-  ```xml
+```xml
   <servlet>
     	<servlet-name>MemberListServlet</servlet-name>
     	<servlet-class>spms.servlets.MemberListServlet</servlet-class>
@@ -32,11 +32,10 @@ title: JavaWebDev - Servlet - ContextInit
   		<param-value>maria</param-value>
   	</init-param>
   </servlet>
-  
   <servlet-mapping>
   	<servlet-name>MemberListServlet</servlet-name>
   	<url-pattern>/member/list</url-pattern>
   </servlet-mapping>
-  ```
+```
 
 ---
