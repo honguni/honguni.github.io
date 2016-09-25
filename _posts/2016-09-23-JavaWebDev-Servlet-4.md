@@ -1,72 +1,26 @@
 ---
 layout: post
-title: JavaWebDev - Servlet - Overview
+title: JavaWebDev - Servlet - Context Init
 ---
 
-[CGI](https://ko.wikipedia.org/wiki/%EA%B3%B5%EC%9A%A9_%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9B%A8%EC%9D%B4_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4){:target="_blank"} - 웹서버와 애플리케이션 사이의 데이터를 주고받는 규칙
+### 서블릿 초기화 매개변수
 
-[서블릿](https://ko.wikipedia.org/wiki/%EC%9E%90%EB%B0%94_%EC%84%9C%EB%B8%94%EB%A6%BF){:target="_blank"} - 자바로 만든 CGI 프로그램
-
-[WAS](https://ko.wikipedia.org/wiki/%EC%9B%B9_%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98_%EC%84%9C%EB%B2%84){:target="_blank"} - 웹 기술을 기반으로 클라이언트·서버 시스템 구조에서 
-
-서버 쪽 애플리케이션의 생성과 실행, 소멸을 관리
-
----
-
-javax.servlet.Servlet 인터페이스
-
+  - 서블릿을 생성하고 초기화할 때 서블릿 컨테이너가 전달하는 데이터
+  
+  - 보통 데이터베이스 연결 정보와 같은 정적인 데이터를 서블릿에 전달할 때 사용
+  
+  - DD파일(web.xml)에 서블릿 배치 정보 작성
 ```java
-public class HelloWorld implements Servlet {
-	ServletConfig config;
-	
-	@Override
-	public void init(ServletConfig arg0) throws ServletException {
-		System.out.println("init");	
-		this.config = config;
-	}
-
-	@Override
-	public void service(ServletRequest arg0, ServletResponse arg1)
-			throws ServletException, IOException {
-		System.out.println("service");
-	}
-	
-	@Override
-	public void destroy() {
-		System.out.println("destroy");
-		
-	}
-
-	@Override
-	public ServletConfig getServletConfig() {
-		System.out.println("getServletConfig");
-		return this.config;
-	}
-
-	@Override
-	public String getServletInfo() {
-		System.out.println("getServletInfo");
-		return "HelloWorld Servlet";
-	}
-
-}
+<servlet>
+  <servlet-name>MemberListServlet</servlet-name>
+  <servlet-class>spms.servlets.MemberListServlet</servlet-class>
+  <init-param>
+    <param-name>driver</param-name>
+    <param-value>org.mariadb.jdbc.Driver</param-value>
+  </init-param>
 ```
 
-- init() : 서블릿 컨테이너가 서블릿을 생성 후 초기화 작업을 수행하기 위해 호출하는 메서드
-
-- service() : 클라이언트가 요청할 때 마다 호출되는 메서드
-
-- destroy() : 서블릿 컨테이너가 종료되거나 웹 애플리케이션이 멈출 때, 또는 해당 서블릿을 비활성화 시킬 때 호출되는 메서드
-
-- getServletConfig() : 서블릿 설정 정보를 다루는 ServletConfig 객체 반환
-
-- getServletInfo() : 서블릿을 작성한 사람에 대한 정보, 서블릿 버전, 권리 등을 담은 문자열 반환
-
 ---
-
-### 서블릿 배치 정보 작성
-
-1. web.xml에 등록
 
 ```xml
 <servlet>
