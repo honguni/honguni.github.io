@@ -89,8 +89,8 @@ title: JavaWebDev - Servlet - ContextInit
 	<servlet-class>spms.servlets.MemberListServlet</servlet-class>
   </servlet>
 ```
-
   - 서블릿
+  
 ```java
   //1. 사용할 JDBC 드라이버를 등록하라.
   ServletContext ctx = this.getServletContext();
