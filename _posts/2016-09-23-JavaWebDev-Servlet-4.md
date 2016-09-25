@@ -11,14 +11,32 @@ title: JavaWebDev - Servlet - ContextInit
   
   - DD파일(web.xml)에 서블릿 배치 정보 작성
   
-```java
-<servlet>
-  <servlet-name>MemberListServlet</servlet-name>
-  <servlet-class>spms.servlets.MemberListServlet</servlet-class>
-  <init-param>
-    <param-name>driver</param-name>
-    <param-value>org.mariadb.jdbc.Driver</param-value>
-  </init-param>
-```
+  ```xml
+  <servlet>
+    	<servlet-name>MemberListServlet</servlet-name>
+    	<servlet-class>spms.servlets.MemberListServlet</servlet-class>
+  	<init-param>
+   		<param-name>driver</param-name>
+  		<param-value>org.mariadb.jdbc.Driver</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>url</param-name>
+  		<param-value>jdbc:mariadb://localhost/studydb</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>username</param-name>
+  		<param-value>root</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>password</param-name>
+  		<param-value>maria</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MemberListServlet</servlet-name>
+  	<url-pattern>/member/list</url-pattern>
+  </servlet-mapping>
+  ```
 
 ---
