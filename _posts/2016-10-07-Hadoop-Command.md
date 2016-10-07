@@ -12,6 +12,7 @@ title: Hadoop 기초 & 명령어 모음
 
 # Hadoop 명령어
 * namenode -format : 하둡 분산 파일 시스템 포맷 수행
+* hadoop fs -put localfile /user/hadoop/hadoopfile
 * hadoop fs -cat [path]			// 경로의 파일 읽기 (리눅스의 cat 명령어)
 * hadoop fs -count [path]			// 경로상의 폴더, 파일, 파일사이즈를 보여줌
 * hadoop fs -cp [소스 경로] [복사 경로]	// hdfs 상에서 파일 복사
